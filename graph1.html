@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<!-- 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+AUTHOR	:: Data Miners
+PROJECT	:: Big Data Analytics on Road Accidents
+VERSION	:: 0.01
+THEME	:: Dark (Youtube Background)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+-->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Accident Analysis</title>
+	
+	<!-- FONT-AWESOME ICON -->
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome-4.3.0/css/font-awesome.min.css">
+
+	<!-- GOOGLE FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!-- PLUGINS SCRIPT -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/YTPlayer.css">
+
+	<!-- CORE STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script src="js/highcharts.js"></script>
+	<script src="js/modules/exporting.js"></script>
+			<script type="text/javascript">
+	$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: 'Drunk Drive VS Accidents'
+        },
+        subtitle: {
+            text: 'CmpE 239'
+        },
+        xAxis: {
+            categories: ['California', 'New York', 'Texas', 'Ohio', 'Michigan', 'Colorado'],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Units'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000;
+                }
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: 'count'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+            name: 'Vehicles Damaged',
+            data: [5737, 1950, 4685,1802,1562,807]
+        }, {
+            name: 'Fatals',
+            data: [3974, 1333, 3363, 1257, 1088, 554]
+        }, {
+            name: 'Drunken Driving Fatals',
+            data: [1650, 375, 1020, 546, 374, 299]
+        }]
+    });
+});
+		</script>
+
+</head>
+<body>
+
+	
+		
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <h1><a href="graph1.html">
+                        Graphs
+                    </a></h1>
+                </li>
+                <li>
+                    <a href="statevsaccidentsgraph.jsp">State VS Accidents</a>
+                </li>
+                <li>
+                    <a href="alignmentvsaccidents.jsp">Alignment VS Accidents</a>
+                </li>
+                <li>
+                    <a href="graph1.html">Drunk Drive VS Accidents</a>
+                </li>
+               <li>
+                   <br>
+                </li>
+                <li>
+                   <a href="harmfuleventsvsfatals.jsp">States VS Harmful Events</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        
+        <!-- /#page-content-wrapper -->
+
+   
+
+				<div id="container" style="min-width: 700px; height: 400px; margin: 0 auto"></div>
+				
+				<br>
+				<br>
+<br><br><br>
+			
+
+			<!-- NAVIGATION -->
+					<nav align= "center">
+				<ul class="navigation-wrp">
+					<li class="nav-box">
+						<a href="index.jsp">Home</a>
+					</li>
+					<li class="nav-box">
+						<a href="about.html">About Us</a>
+					</li>
+					<li class="nav-box">
+						<a href="contact.html">Contact Us</a>
+					</li>
+					<li class="nav-box">
+						<a href="graph1.html">Graphs</a>
+					</li>
+					
+					<li class="nav-box">
+					<a href="map.jsp">MAPS</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- MOBILE-NAVIGATION -->
+			<div class="mobile-icon vhm">
+				<i class="fa fa-bars vhm-item"></i>
+			</div>
+			<nav class="nav-outter-wrp">
+				<ul class="navigation-wrp mob">
+					<li class="nav-box">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="nav-box">
+						<a href="about.html">About Us</a>
+					</li>
+					<li class="nav-box">
+						<a href="contact.html">Contact Us</a>
+					</li>
+					<li class="nav-box">
+						<a href="subscribe.html">subscribe</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+	
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[RESPONSIVE STYLESHEET]
+
+AUTHOR	:: NcodeArt
+PROJECT	:: WinkLine Under-Construction Template
+VERSION	:: 0.01
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+*/
+
+
+/*......................................................
+	DESKTOP LAYOUT
+........................................................*/
+@media only screen and (min-width: 1200px){
+
+	/* LAYOUT-STRUCTURE
+	---------------------------------*/	
+	.container{ width: 1100px; }
+
+}
+@media only screen and (min-width: 980px) and (max-width: 1199px){
+
+	/* LAYOUT-STRUCTURE
+	---------------------------------*/	
+	.container{ width: 880px; }	
+
+	/* TAG-LINE
+	---------------------------------*/
+	.tag-line{ width: 100%; }
+	.cd-words-wrapper b{ font-size: 58px; }
+}
+
+
+
+/*......................................................
+	TABLET LAYOUT
+........................................................*/
+@media only screen and (min-width: 768px) and (max-width: 979px){
+
+	/* LAYOUT-STRUCTURE
+	---------------------------------*/	
+	.container{ width: 668px; }	
+	.page{ padding: 80px 0; }	
+
+	/* TAG-LINE
+	---------------------------------*/
+	.tag-line{ width: 100%; }
+	.cd-words-wrapper b{ font-size: 48px; }
+
+	/* COUNTDOWN CLOCK
+	---------------------------------*/
+	#countdown_dashboard{ padding: 22px 0 13px 0; }
+	.dash{ padding: 8px 28px 34px 28px; }
+	.dash .digit{ font-size: 55px; min-width: 30px; }
+	.dash_title{ font-size: 14px; }
+
+	/* FRONT DISPLAY
+	---------------------------------*/
+	.front-display{ 
+		position: fixed; 
+		bottom: 0; 
+		padding-bottom: 0;
+	}
+
+	/* SOCIAL-ICON
+	---------------------------------*/
+	.social-icon{ display: none; }
+
+	/* SECONDS-LINE
+	---------------------------------*/
+	.secons-line{ margin-bottom: 0; }
+	.secons-line li:before,
+	.secons-line li:after {
+		width: 4px;
+		height: 4px;
+	}
+	.secons-line .active:after {
+		opacity: 0;
+		background-color: #fff;
+		transform: scale(10);
+		-webkit-transform: scale(10);
+		-moz-transform: scale(10);
+		-o-transform: scale(10);
+		-ms-transform: scale(10);
+	}
+	.secons-line .active:before {
+		opacity: 1;
+		transform: scale(2);
+		-webkit-transform: scale(2);
+		-moz-transform: scale(2);
+		-o-transform: scale(2);
+		-ms-transform: scale(2);
+	}
+
+	/* NAVIGATION-MOBILE
+	--------------------------------*/
+	.mobile-icon{ display: block; }
+	.navigation-wrp{ display: none; }
+	.navigation-wrp.mob{ display: block; }
+
+	/* ABOUT-US
+	---------------------------------*/
+	#about-us .col-md-3{ width: 100%; }
+	.info-box{ 
+		width: 70%;
+		margin: auto;
+		margin-bottom: 4px;
+	}
+}
+
+
+
+/*......................................................
+	MOBILE LAYOUT
+........................................................*/
+@media only screen and (min-width: 600px) and (max-width: 767px){
+
+	/* LAYOUT-STRUCTURE
+	---------------------------------*/	
+	.container{ width: 500px; }	
+	.page{ padding: 80px 0; }	
+
+	/* TAG-LINE
+	---------------------------------*/
+	.tag-line{ width: 100%; }
+	.cd-words-wrapper b{ font-size: 35px; }
+
+	/* COUNTDOWN CLOCK
+	---------------------------------*/
+	#countdown_dashboard{ padding: 22px 0 13px 0; }
+	.dash{ padding: 6px 28px 28px 28px; min-height: 90px; }
+	.dash .digit{ font-size: 50px; min-width: 26px; }
+	.dash_title{ font-size: 12px; }
+
+	/* ABOUT-US
+	---------------------------------*/
+	.info-box{ width: 70%; }
+}
+@media only screen and (min-width: 480px) and (max-width: 599px){
+
+	/* LAYOUT-STRUCTURE
+	---------------------------------*/	
+	.container{ width: 300px; }	
+	.page{ padding: 80px 0; }	
+
+	/* TAG-LINE
+	---------------------------------*/
+	.tag-line{ width: 100%; }
+	.cd-words-wrapper b{ font-size: 28px; }
+
+	/* COUNTDOWN CLOCK
+	---------------------------------*/
+	#countdown_dashboard{ padding: 17px 0 8px 0; }
+	.dash{ padding: 6px 22px 22px 22px; min-height: 80px; }
+	.dash .digit{ font-size: 40px; min-width: 20px; }
+	.dash_title{ font-size: 12px; }
+
+	/* ABOUT-US
+	---------------------------------*/
+	.info-box{ width: 80%; }
+
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+
+	/* LAYOUT-STRUCTURE
+	---------------------------------*/	
+	.container{ width: 270px; }	
+	.page{ padding: 80px 0; }	
+
+	/* TAG-LINE
+	---------------------------------*/
+	.tag-line{ width: 100%; }
+	.cd-words-wrapper b{ font-size: 28px; }
+
+	/* COUNTDOWN CLOCK
+	---------------------------------*/
+	#countdown_dashboard{ padding: 17px 0 8px 0; min-height: 100px; }
+	.dash{ 
+		padding: 6px 18px 18px 18px; 
+		min-height: 70px; 
+		min-width: 70px;
+	}
+	.dash .digit{ font-size: 25px; min-width: 14px; }
+	.dash_title{ font-size: 12px; }
+
+	/* ABOUT-US
+	---------------------------------*/
+	.info-box{ width: 90%; }
+	
+
+} 
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+	.page-wrapper{ min-height: inherit !important; height: 100% !important; }
+	.page-wrapper.vm{ display: block; }
+	.page-wrapper.vm > .vm-item{ display: block; }
+	.page-wrapper.home-page.vm{ display: table; }
+	.page-wrapper.home-page.vm .vm-item{ display: table-cell; }
+	.social-icon{ display: none; }
+
+	/* FRONT DISPLAY
+	---------------------------------*/
+	.front-display{ 
+		position: fixed; 
+		bottom: 0; 
+		padding-bottom: 0;
+	}
+
+	/* SECONDS-LINE
+	---------------------------------*/
+	.secons-line{ margin-bottom: 0; }
+	.secons-line li:before,
+	.secons-line li:after {
+		width: 2px;
+		height: 2px;
+	}
+	.secons-line .active:after {
+		opacity: 0;
+		background-color: #fff;
+		transform: scale(10);
+		-webkit-transform: scale(10);
+		-moz-transform: scale(10);
+		-o-transform: scale(10);
+		-ms-transform: scale(10);
+	}
+	.secons-line .active:before {
+		opacity: 1;
+		transform: scale(2);
+		-webkit-transform: scale(2);
+		-moz-transform: scale(2);
+		-o-transform: scale(2);
+		-ms-transform: scale(2);
+	}
+
+	/* LOGO
+	--------------------------------*/
+	.logo{ 
+		width: 50px; 
+		top: 10px;
+		left: 10px;
+	}
+
+	/* NAVIGATION-MOBILE
+	--------------------------------*/
+	.mobile-icon{ display: block; }
+	.navigation-wrp{ display: none; }
+	.navigation-wrp.mob{ display: block; }
+
+	/* ABOUT-US
+	---------------------------------*/
+	#about-us .col-md-3{ width: 100%; }
+	.info-box{ margin: auto; margin-bottom: 4px; }
+	
+	/* CONTACT-US
+	---------------------------------*/
+	.contact-form .input-area{ margin-bottom: 15px; }
+
+	/* SUBSCRIBE PAGE
+	--------------------------------*/
+	.subscription{ width: 100%; }
+}
